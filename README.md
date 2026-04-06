@@ -96,9 +96,9 @@ This system follows a distributed microservices architecture where each service 
                     └──────────────┬───────────────┘
                                    │ HTTPS
                     ┌──────────────▼───────────────┐
-                    │   tomato-gateway.onrender.com  │
-                    │       (API Gateway)            │
-                    └──┬──────┬──────┬──────┬───────┘
+                    │     api.tomatoapp.store      │
+                    │       (API Gateway)          │
+                    └──┬──────┬──────┬──────┬──────┘
                        │      │      │      │
            ┌───────────▼─┐ ┌──▼───┐ ┌▼────┐ ┌▼──────────────┐
            │ Auth Service│ │Admin │ │Rest │ │Rider + Utils  │
@@ -111,7 +111,7 @@ This system follows a distributed microservices architecture where each service 
            └───────────────────┘      └──────────────────┘
 
            WebSocket (direct):
-           Frontend → tomato-realtime.onrender.com
+           Frontend → api.tomatoapp.store
 ```
 
 ---
@@ -185,7 +185,7 @@ tomato/
 │   ├── restaurant/
 │   ├── rider/
 │   ├── realtime/
-│   └── utils/             # k6 load testing scripts
+│   └── utils/
 └── README.md
 ```
 
@@ -234,7 +234,7 @@ cd services/auth && npm run dev
 ## 🔗 Live Demo
 
 - **Frontend:** https://www.tomatoapp.store
-- **API Gateway:** https://tomato-gateway-service.onrender.com
+- **API Gateway:** https://api.tomatoapp.store
 
 ---
 
