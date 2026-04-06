@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/manikandaprabhu0512/tomato-app-backend
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/manikandaprabhu0512/tomato-app-frontend
